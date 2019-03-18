@@ -5,7 +5,7 @@
  $(function(){
   $.post('https://bird.ioliu.cn/ip',{}, function(data){
      console.log(data);
-    $('#mydiv').html(data);
+    $('#mydiv').html(data.data.ip);
   })
  })
  </script>
