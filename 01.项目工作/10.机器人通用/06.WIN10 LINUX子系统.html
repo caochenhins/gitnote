@@ -1,7 +1,10 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-<script>$.post('https://bird.ioliu.cn/v1?url=http://www.bing.com/HPImageArchive.aspx?format=js&idx=1&n=1',{},
+<script>$.post('https://bird.ioliu.cn/ip',{},
                function(data){
   console.log(data);
+    $('#mydiv').html(data);
   })</script>
 22
+
+<div id="mydiv"></div>
